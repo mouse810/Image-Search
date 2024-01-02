@@ -1,8 +1,11 @@
-import React from 'react'
-
-const ImageShow = () => {
+import './ImageShow.css'
+const ImageShow = ({ image }) => {
   return (
-    <div>ImageShow</div>
+
+    <div>
+      <img src={image.urls.small} alt={image.alt_description} />
+    </div>
+
   )
 }
 
